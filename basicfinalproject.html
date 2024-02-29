@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SheCodes</title>
+    <style>
+      body {
+        background: radial-gradient(
+          circle at 0.3% 1.3%,
+          rgb(235, 217, 221) 0%,
+          rgb(216, 174, 211) 45.1%,
+          rgb(145, 130, 196) 100.2%
+        );
+      }
+      h1 {
+        text-align: center;
+        color: blueviolet;
+      }
+      h2 {
+        text-align: center;
+        border: 3px solid blue;
+        border-radius: 7px;
+        padding: 10px;
+        color: #f5528f;
+        background-color: aqua;
+      }
+      img {
+        display: block;
+        max-width: 100%;
+        margin: auto;
+        border: 4px solid black;
+        border-radius: 10px;
+      }
+      p {
+        font-size: medium;
+        color: black;
+        line-height: 20px;
+      }
+      .connect {
+        display: block;
+        margin: 10px;
+      }
+      button {
+        display: block;
+        padding: 15px;
+        margin: 20px auto;
+        background-color: blueviolet;
+        border: 2px solid blue;
+        border-radius: 8px;
+        font-style: italic;
+        transition: all 200ms ease-in-out;
+        box-shadow: 5px 5px 5px grey;
+      }
+      button:hover {
+        background: white;
+        color: blue;
+        cursor: pointer;
+      }
+      .shweta {
+        text-align: center;
+        font-style: italic;
+        color: black;
+        font-weight: 100;
+      }
+      .contain {
+        margin: 0 auto;
+        max-width: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contain">
+      <h1>Welcome to SheCodes!!</h1>
+      <h2><em>Meet Our Instructor, Matt Delac!</em></h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/104/251/original/1685988065927.jpg?1700231816"
+        width="200"
+      />
+      <hr />
+      <p>
+        Matt Delac is a software engineer with 10+ years of experience who has
+        worked with companies such as Google and Airbnb. Originally from 🇫🇷
+        France, he started a company in 🇺🇸 Silicon Valley with funding from Y
+        Combinator (#1 startup accelerator worldwide), has a Masters degree in
+        computer engineering from 🇨🇦 Canada, worked as a full-stack engineer in
+        🇦🇺 Australia and has taught 180,000+ students how to code (online and
+        offline) through SheCodes. His workshop rating average is 🌟 4.9/5.
+        <br />
+        <span class="connect">
+          <a href="https://www.linkedin.com/in/mattdelac" target="_blank">
+            Let's connect with Matt
+          </a>
+        </span>
+      </p>
+      <button>Join Us 👋</button>
+      <p class="shweta">
+        <strong>
+          This page is built by
+          <a href="https://www.linkedin.com/in/shwetagupta2710" target="_blank">
+            Shweta Gupta
+          </a>
+        </strong>
+      </p>
+    </div>
+    <script>
+      function join() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let age = prompt("What is your age?");
+        if (age >= 18) {
+          alert(
+            "You can apply for SheCodes. Details are send to your email address."
+          );
+        } else {
+          alert("Sorry, You cannot apply for SheCodes.");
+        }
+      }
+      let joinButton = document.querySelector("button");
+      joinButton.addEventListener("click", join);
+    </script>
+  </body>
+</html>
